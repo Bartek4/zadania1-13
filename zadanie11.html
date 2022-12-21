@@ -1,0 +1,28 @@
+
+   <html>
+    <body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+  var liczba1=prompt("c=","");
+  var liczba2=prompt("b=","");
+  var c_tań=parseFloat(liczba1);
+  var b_tań=parseFloat(liczba2);
+  
+  document.write("c="+c_tań+"<br>");
+  document.write("b="+b_tań+"<br>");
+   a_tań=Math.sqrt(c_tań*c_tań-b_tań*b_tań);
+  document.write("a_tań="+a_tań.toFixed(2)+"<br>");
+  
+  P_tań=a_tań*b_tań/2
+  document.write("Pole="+P_tań.toFixed(2)+"cm^2"+"<br>");
+  
+  Obw_tań=a_tań+b_tań+c_tań
+  document.write("Obw="+Obw_tań.toFixed(2)+"cm"+"<br>");
+  
+  sin_beta=b_tań/c_tań;
+  beta_tań=math.aSin(sin_beta)*180/Math.PI;
+  document.write("Beta="+beta_tań.toFixed(2)+"<br>");
+  </script>
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+      <div style="color:violet;font-size:13mm;">
+  <script language="JavaScript">
+       var liczba1=prompt("podaj c=","");
+       var liczba2=prompt("podaj b=","");
+       var c_tań=parseFloat(liczba1);
+       var b_tań=parseFloat(liczba2);
+  document.write("C="+c_tań.toFixed(2)+"cm"+"<br>");
+  document.write("B="+b_tań.toFixed(2)+"cm"+"<br>");
+  var a_tań=Math.sqrt(Math.pow(c_tań,2)-Math.pow(b_tań,2));
+  document.write("A="+a_tań.toFixed(2)+"cm"+"<br>");
+  // Oblicz obw i pole pamietaj o jednostkach sin_alfa_tań=b_tań/c_tań
+  sin_alfa_tań=b_tań/c_tań;
+  document.write("sin(a)="+sin_alfa_tań.toFixed(3)+"<br>");
+  alfa_tań=Math.asin(b_tań/c_tań)*(180/Math.PI);
+  document.write("alfa="+alfa_tań.toFixed(2)+" st"+"<br");
+  </script>
+  </div>
+  </body>
+  </html>
